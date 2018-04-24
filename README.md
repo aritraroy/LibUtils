@@ -4,7 +4,7 @@ Utilities to upload libraries quickly to maven repository in Bintray.
 ## Steps
 1. Add bintray username (`bintray.user`) and API key (`bintray.apikey`) in the `local.properties` file.
 2. Add these in the top-level `build.gradle` file -  `classpath 'com.jfrog.bintray.gradle:gradle-bintray-plugin:1.4'` and `classpath 'com.github.dcendents:android-maven-gradle-plugin:1.4.1'`
-3. Add these in the library `build.gradle` file - `https://raw.githubusercontent.com/aritraroy/LibUtils/master/install.gradle` and `https://raw.githubusercontent.com/aritraroy/LibUtils/master/upload.gradle`
+3. Add these in the library `build.gradle` file - `apply from: 'https://raw.githubusercontent.com/aritraroy/LibUtils/master/install.gradle'` and `apply from: 'https://raw.githubusercontent.com/aritraroy/LibUtils/master/upload.gradle'`
 4. Add this in your library `build.gradle` file
 ```
 ext {
